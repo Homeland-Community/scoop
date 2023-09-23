@@ -1,0 +1,26 @@
+{
+    "version": "2.7.0",
+    "description": "A censorship circumvention tool to evade detection by authoritarian state adversaries.",
+    "homepage": "https://github.com/cbeuw/Cloak",
+    "license": "GPL-3",
+    "notes": "",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/cbeuw/Cloak/releases/download/v2.7.0/ck-client-windows-amd64-v2.7.0.exe#/ck-client-windows-amd64.exe",
+            "hash": "394486DD8812E4D2640BBAE49255CBD7D546F75D54FA671C40B3BE862950F0D0"
+        }
+    },
+    "checkver": {
+        "url": "https://api.github.com/repos/cbeuw/Cloak/releases",
+        "jsonpath": "$.[0].tag_name",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/cbeuw/Cloak/releases/download/v$version/ck-client-windows-amd64-v$version.exe#/ck-client-windows-amd64.exe"
+            }
+        }
+    },
+    "bin": "ck-client-windows-amd64.exe"
+}
