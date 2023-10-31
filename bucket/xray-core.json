@@ -22,5 +22,10 @@
             }
         }
     },
+    "persist": [
+        "config.json",
+        "geoip.dat",
+        "geosite.dat"
+    ],
     "bin": "xray.exe"
 }
