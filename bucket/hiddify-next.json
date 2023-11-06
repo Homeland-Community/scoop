@@ -18,6 +18,6 @@
             }
         }
     },
-    "extract_dir": "hiddify-windows-x64-portable.zip",
+    "extract_dir": "HiddifyNext-portable",
     "bin": "HiddifyNext.exe"
 }
