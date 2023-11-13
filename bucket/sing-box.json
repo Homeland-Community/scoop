@@ -1,13 +1,13 @@
 {
-    "version": "1.6.3",
+    "version": "1.6.4",
     "description": "The universal proxy platform.",
     "homepage": "https://github.com/SagerNet/sing-box",
     "license": "GPL",
     "notes": "",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.6.3/sing-box-1.6.3-windows-amd64.zip",
-            "hash": "a32613ac5121dc74dee86cc688fc7d01ea5ea6f03ec3fb7e1f346ae78eed7ffa"
+            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.6.4/sing-box-1.6.4-windows-amd64.zip",
+            "hash": "a69dab1c857fa4ba7f73a13f93a3af73a3a237f9a1b7833288c6d1b4662ad6f9"
         }
     },
     "checkver": "github",
