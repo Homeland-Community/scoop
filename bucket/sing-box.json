@@ -6,7 +6,7 @@
     "notes": "",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.7.8/sing-box-1.7.8-windows-amd64.zip",
+            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.7.8/sing-box-1.7.8-windows-amd64.zip#/sing-box.zip",
             "hash": "5cf49d756c1282094113c1d6b3e4176e0425331623c8b2ba39108be7823248d9"
         }
     },
@@ -14,11 +14,11 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/SagerNet/sing-box/releases/download/v$version/sing-box-$version-windows-amd64.zip"
+                "url": "https://github.com/SagerNet/sing-box/releases/download/v$version/sing-box-$version-windows-amd64.zip#/sing-box.zip"
             }
         }
     },
-    "extract_dir": "sing-box-$version-windows-amd64",
+    "extract_dir": "sing-box.zip",
     "pre_install": "if (!(Test-Path \"$persist_dir\\$config.json\")) { New-Item \"$dir\\config.json\" }",
     "persist": "config.json",
     "bin": "sing-box.exe"
