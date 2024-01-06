@@ -18,7 +18,14 @@
             }
         }
     },
+    "extract_dir": "sing-box",
     "pre_install": "if (!(Test-Path \"$persist_dir\\$config.json\")) { New-Item \"$dir\\config.json\" }",
     "persist": "config.json",
-    "bin": "sing-box.exe"
+    "bin": "sing-box.exe",
+    "shortcuts": [
+        [
+            "sing-box.exe",
+            "sing-box"
+        ]
+    ]
 }
