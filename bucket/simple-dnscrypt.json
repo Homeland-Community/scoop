@@ -20,12 +20,5 @@
     },
     "post_install": [
         "Get-ChildItem \"$dir\\SimpleDNSCrypt\\*\" -Recurse | Move-Item -Destination $dir"
-    ],
-    "shortcuts": [
-        [
-            "SimpleDnsCrypt.exe",
-            "Simple DnsCrypt"
-        ]
-    ],
-    "bin": "SimpleDnsCrypt.exe"
+    ]
 }
