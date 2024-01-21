@@ -18,15 +18,11 @@
             }
         }
     },
-    "post_install": [
-        "Get-ChildItem \"$dir\\SimpleDNSCrypt\\*\" -Recurse | Move-Item -Destination $dir",
-        "Remove-Item \"$dir\\SimpleDNSCrypt\" -Recurse -Force"
-    ],
+    "extract_dir": "SimpleDNSCrypt",
     "shortcuts": [
         [
             "SimpleDnsCrypt.exe",
             "Simple DnsCrypt"
         ]
-    ],
-    "bin": "SimpleDnsCrypt.exe"
+    ]
 }
