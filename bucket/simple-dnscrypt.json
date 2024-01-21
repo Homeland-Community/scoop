@@ -53,5 +53,5 @@
             "Simple DnsCrypt"
         ]
     ],
-    "bin": "SimpleDnsCrypt.exe",
+    "bin": "SimpleDnsCrypt.exe"
 }
