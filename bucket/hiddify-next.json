@@ -18,7 +18,7 @@
             }
         }
     },
-    "extract_dir": "HiddifyNext-portable",
+    "extract_dir": "hiddify-next",
     "bin": "HiddifyNext.exe",
     "shortcuts": [
         [

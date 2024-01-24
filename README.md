@@ -12,6 +12,7 @@ dnscrypt-proxy
 hiddify-next
 hysteria
 nekoray
+psping
 simple-dnscrypt
 sing-box
 v2ray-core
