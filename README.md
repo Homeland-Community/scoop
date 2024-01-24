@@ -16,5 +16,6 @@ simple-dnscrypt
 sing-box
 v2ray-core
 v2rayn
+wireguard-go
 xray-core
 ```
