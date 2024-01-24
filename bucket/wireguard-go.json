@@ -22,9 +22,9 @@
     "bin": "warp.exe",
     "shortcuts": [
         [
-            "wireguard-go",
             "warp.exe",
-            "warp"
+            "warp",
+            "wireguard-go"
         ]
     ]
 }
