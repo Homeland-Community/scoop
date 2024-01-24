@@ -19,10 +19,7 @@
         }
     },
     "pre_install": "if (!(Test-Path \"$persist_dir\\$dnscrypt-proxy.toml\")) { Copy-Item \"$dir\\example-dnscrypt-proxy.toml\" \"$dir\\dnscrypt-proxy.toml\" }",
-    "persist": [
-        "dnscrypt-proxy.toml",
-        "localhost.pem"
-    ],
+    "persist": "dnscrypt-proxy.toml",
     "extract_dir": "win64",
     "bin": "dnscrypt-proxy.exe"
 }
