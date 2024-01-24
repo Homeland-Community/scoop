@@ -19,5 +19,11 @@
         "wgcf-profile.ini",
         "wgcf-identity.json"
     ],
-    "bin": "warp.exe"
+    "bin": "warp.exe",
+    "shortcuts": [
+        [
+            "warp.exe",
+            "warp"
+        ]
+    ]
 }
