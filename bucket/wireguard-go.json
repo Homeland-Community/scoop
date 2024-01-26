@@ -13,7 +13,7 @@
     "checkver": {
         "url": "https://api.github.com/repos/uoosef/wireguard-go/releases",
         "jsonpath": "$.[0].assets[0].browser_download_url",
-        "regex": "v(?<version>[\\d.]+)\/[^\/]+\\.(?<commit>[\\w]+)\\.zip$"
+        "regex": "v(?<version>[\\d.]+-alpha)\/[^\/]+\\.(?<commit>[\\w]+)\\.zip$"
     },
     "autoupdate": {
         "architecture": {
