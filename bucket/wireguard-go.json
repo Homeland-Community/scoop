@@ -10,7 +10,11 @@
             "hash": "5D36015E2C013FA516F8E4F53C5834AE8D210867BA0215CC7AF63C29DAAD27EE"
         }
     },
-    "checkver": "github",
+    "checkver": {
+        "url": "https://api.github.com/repos/uoosef/wireguard-go/releases",
+        "jsonpath": "$.[0].assets[0].browser_download_url",
+        "regex": "v(?<version>[\\d.]+)\/[^\/]+\\.(?<commit>[\\w]+)\\.zip$"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
