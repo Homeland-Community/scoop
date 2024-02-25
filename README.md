@@ -26,3 +26,13 @@ xray-core
 xray-knife
 xray-plugin
 ```
+
+### Under Maintenance
+```
+protonvpn
+psiphon3
+securednsclient(SDC)
+tor-browser
+windscribe
+wireguard
+```
