@@ -14,6 +14,7 @@ hiddify-next
 hysteria
 nekoray
 psping
+securednsclient
 simple-dnscrypt
 sing-box
 singbox-ui
@@ -29,9 +30,9 @@ xray-plugin
 
 ### Under Maintenance
 ```
+chisel
 protonvpn
 psiphon3
-securednsclient(SDC)
 tor-browser
 windscribe
 wireguard
