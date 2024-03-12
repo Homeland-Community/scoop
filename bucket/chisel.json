@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/jpillora/chisel/releases/download/v1.9.1/chisel_1.9.1_windows_amd64.gz",
-            "hash": "19188a4c5110709fe0277421eab563bf4d738cdd3766a440e76ff00cd653dc88"
+            "hash": "b694ceb4750cec0eeae923603ef176f9e9d57a504a62c5d31f653ea992ca063c"
         }
     },
     "bin": "chisel.exe",
