@@ -10,7 +10,11 @@
             "hash": "a8d8e0875a9992ee39c1fc4f99d6ce4cf602549c984d45a5d9a4ad81ecf8d8e7"
         }
     },
-    "checkver": "github",
+    "checkver": {
+        "url": "https://api.github.com/repos/hiddify/hiddify-next/releases",
+        "jsonpath": "$.[0].tag_name",
+        "regex": "([\\d.]+)"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
