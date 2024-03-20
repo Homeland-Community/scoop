@@ -22,8 +22,8 @@
             }
         }
     },
-    "extract_dir": "hiddify-next",
-    "bin": "HiddifyNext.exe",
+    "extract_dir": "hiddify",
+    "bin": "Hiddify.exe",
     "shortcuts": [
         [
             "HiddifyNext.exe",
