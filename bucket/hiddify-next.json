@@ -22,12 +22,12 @@
             }
         }
     },
-    "extract_dir": "hiddify",
+    "extract_dir": "hiddify-next",
     "bin": "Hiddify.exe",
     "shortcuts": [
         [
-            "HiddifyNext.exe",
-            "HiddifyNext"
+            "Hiddify.exe",
+            "Hiddify"
         ]
     ]
 }
