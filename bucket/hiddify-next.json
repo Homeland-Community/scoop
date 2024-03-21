@@ -22,7 +22,6 @@
             }
         }
     },
-    "extract_dir": "hiddify-next",
     "bin": "Hiddify.exe",
     "shortcuts": [
         [
