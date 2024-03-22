@@ -23,11 +23,11 @@
         }
     },
     "persist": "stuff",
-    "bin": "warp.exe",
+    "bin": "warp-plus.exe",
     "shortcuts": [
         [
             "warp-plus.exe",
-            "warp-plus"
+            "warp"
         ]
     ]
 }
