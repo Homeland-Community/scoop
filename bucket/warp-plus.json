@@ -1,13 +1,13 @@
 {
-    "version": "1.0.4-rc2",
+    "version": "1.1.0",
     "description": "Patched for Warp to work in iran.",
-    "homepage": "https://github.com/bepass-org/wireguard-go",
+    "homepage": "https://github.com/bepass-org/warp-plus",
     "license": "MIT",
     "notes": "",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/bepass-org/wireguard-go/releases/download/v1.0.4-rc2/warp-windows-amd64.b6d64e.zip",
-            "hash": "09b707f9092d3e6ef5e4e103e8df36865842e4a230fd3282b595a58b833454d0"
+            "url": "https://github.com/bepass-org/warp-plus/releases/download/v1.1.0/warp-plus-windows-amd64.cdb551.zip",
+            "hash": "F67CD379DD737CBF2E519E8CB202E23DE3D7DDDE625329DF502179DEEAA5E86C"
         }
     },
     "checkver": {
@@ -18,7 +18,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/bepass-org/wireguard-go/releases/download/v$version/warp-windows-amd64.$matchCommit.zip"
+                "url": "https://github.com/bepass-org/warp-plus/releases/download/v$version/warp-plus-windows-amd64.$matchCommit.zip"
             }
         }
     },
@@ -26,9 +26,8 @@
     "bin": "warp.exe",
     "shortcuts": [
         [
-            "warp.exe",
-            "warp",
-            "wireguard-go"
+            "warp-plus.exe",
+            "warp"
         ]
     ]
 }
