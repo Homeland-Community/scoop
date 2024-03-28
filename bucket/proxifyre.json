@@ -1,7 +1,7 @@
 {
     "version": "1.0.18",
     "description": " ProxiFyre: SOCKS5 Proxifier for Windows.",
-    "homepage": "https://www.ntkernel.com/",
+    "homepage": "https://github.com/wiresock/proxifyre",
     "license": "AGPL-3",
     "notes": "",
     "architecture": {
