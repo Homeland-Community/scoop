@@ -13,6 +13,7 @@ dnscrypt-proxy
 hiddify-next
 hysteria
 nekoray
+proxifyre
 psping
 securednsclient
 simple-dnscrypt
@@ -22,7 +23,7 @@ tun2socks
 v2ray-core
 v2ray-plugin
 v2rayn
-wireguard-go
+warp-plus
 xray-core
 xray-knife
 xray-plugin
