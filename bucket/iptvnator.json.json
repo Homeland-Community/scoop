@@ -14,7 +14,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/4gray/iptvnator/releases/download/$version/IPTVnator-Setup-$version.exe"
+                "url": "https://github.com/4gray/iptvnator/releases/download/v$version/IPTVnator-Setup-$version.exe"
             }
         }
     },
