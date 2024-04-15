@@ -18,11 +18,5 @@
             }
         }
     },
-    "bin": "IPTVnator-Setup.exe",
-    "shortcuts": [
-        [
-            "IPTVnator.exe",
-            "IPTVnator"
-        ]
-    ]
+    "bin": "IPTVnator-Setup.exe"
 }
