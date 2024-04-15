@@ -32,6 +32,7 @@ xray-plugin
 ### Under Maintenance
 ```
 chisel
+iptvnator
 protonvpn
 psiphon3
 tor-browser
