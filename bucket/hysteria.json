@@ -1,13 +1,13 @@
 {
-    "version": "2.4.4",
+    "version": "2.4.5",
     "description": "Hysteria is a powerful, lightning fast and censorship resistant proxy.",
     "homepage": "https://v2.hysteria.network/",
     "license": "MIT",
     "notes": "",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/apernet/hysteria/releases/download/app/v2.4.4/hysteria-windows-amd64.exe",
-            "hash": "98011bc6ce80b0354738c4cb38c34732716fea8bd494b7ee63b427d97fb7dcfc"
+            "url": "https://github.com/apernet/hysteria/releases/download/app/v2.4.5/hysteria-windows-amd64.exe",
+            "hash": "647871093b70977a906d8931b23eb945756a08387ce9773fa213f7e21ceebd34"
         }
     },
     "checkver": {
