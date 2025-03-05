@@ -34,7 +34,7 @@
     },
     "checkver": {
         "script": [
-            "$dl_url = 'https://download.scdn.co/SpotifyFullSetup.exe'",
+            "$dl_url = 'https://download.scdn.co/SpotifyFullSetupX64.exe'",
             "$dl = cache_path 'spotify' 'unknown' $dl_url",
             "Invoke-WebRequest $dl_url -OutFile $dl",
             "$ver = (Get-Item $dl).VersionInfo.ProductVersion",
@@ -44,6 +44,6 @@
         "regex": "(\\S+)"
     },
     "autoupdate": {
-        "url": "https://download.scdn.co/SpotifyFullSetup.exe"
+        "url": "https://download.scdn.co/SpotifyFullSetupX64.exe"
     }
 }
