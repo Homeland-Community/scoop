@@ -14,7 +14,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Windscribe/Desktop-App/releases/download/v$version/Windscribe_$version.exe"
+                "url": "https://github.com/Windscribe/Desktop-App/releases/download/v$version/Windscribe_$version_amd64.exe"
             }
         }
     }
