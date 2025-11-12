@@ -10,9 +10,11 @@
     "url": "https://www.netlimiter.com/download/nl/netlimiter-5.3.25.0.exe",
     "hash": "ba6fcdae4f139f8fe6fd8dc1f4175d9b79d58289d54745717708ccbf4ae45dc7",
     "pre_install": [
+        "$ErrorActionPreference = 'Stop'",
         "$isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)",
         "if (-not $isAdmin) {",
-        "    throw 'ERROR: Administrator privileges required. Close this window, right-click PowerShell and select Run as Administrator, then run: scoop install netlimiter'",
+        "    Write-Host 'ERROR: Administrator privileges required.' -ForegroundColor Red",
+        "    exit 1",
         "}"
     ],
     "installer": {
