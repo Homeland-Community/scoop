@@ -11,14 +11,14 @@
     "hash": "ba6fcdae4f139f8fe6fd8dc1f4175d9b79d58289d54745717708ccbf4ae45dc7",
     "installer": {
         "script": [
+            "$ErrorActionPreference = 'SilentlyContinue'",
             "$installerPath = \"$dir\\$fname\"",
             "$logPath = \"$dir\\installation.log\"",
             "",
-            "$process = Start-Process -FilePath $installerPath -ArgumentList '/exenoui', '/qn', \"APPDIR=`\"$dir`\"\", \"/l*v `\"$logPath`\"\" -Wait -NoNewWindow -PassThru -ErrorAction SilentlyContinue",
+            "$process = Start-Process -FilePath $installerPath -ArgumentList '/exenoui', '/qn', \"APPDIR=`\"$dir`\"\", \"/l*v `\"$logPath`\"\" -Wait -NoNewWindow -PassThru 2>$null",
             "",
             "if (-not $process) {",
-            "    Write-Host 'ERROR: Administrator privileges required. Run PowerShell as Admin.' -ForegroundColor Red",
-            "    throw 'Installation requires elevation'",
+            "    throw 'ERROR: Administrator privileges required. Run PowerShell as Admin.'",
             "}"
         ]
     },
