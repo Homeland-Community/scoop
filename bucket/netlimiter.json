@@ -25,11 +25,8 @@
         "}"
     ],
     "installer": {
-        "args": [
-            "/exenoui",
-            "/qn",
-            "APPDIR=\"$dir\"",
-            "/l*v \"$dir\\installation.log\""
+        "script": [
+        "Start-Process -FilePath \"$dir\\$fname\" -ArgumentList '/exenoui', '/qn', \"APPDIR=`\"$dir`\"\", \"/l*v `\"$dir\\installation.log`\"\" -Wait -WindowStyle Hidden | Out-Null"
         ]
     },
     "post_install": [
