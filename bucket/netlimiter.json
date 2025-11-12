@@ -9,6 +9,12 @@
     ],
     "url": "https://www.netlimiter.com/download/nl/netlimiter-5.3.25.0.exe",
     "hash": "ba6fcdae4f139f8fe6fd8dc1f4175d9b79d58289d54745717708ccbf4ae45dc7",
+    "pre_install": [
+        "$isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)",
+        "if (-not $isAdmin) {",
+        "    throw 'ERROR: Administrator privileges required. Close this window, right-click PowerShell and select Run as Administrator, then run: scoop install netlimiter'",
+        "}"
+    ],
     "installer": {
         "args": [
             "/exenoui",
@@ -18,31 +24,24 @@
         ]
     },
     "post_install": [
-        "# Wait for installation to complete",
         "Start-Sleep -Seconds 5",
         "",
-        "# Check if NetLimiter installed successfully",
         "$nlExe = Get-ChildItem -Path $dir -Filter 'NLClientApp.exe' -Recurse -ErrorAction SilentlyContinue | Select-Object -First 1",
         "",
         "if (-not $nlExe) {",
-        "    Write-Host 'ERROR: NetLimiter installation failed. Files not found.' -ForegroundColor Red",
-        "    Write-Host 'This usually means administrator privileges are required.' -ForegroundColor Yellow",
+        "    Write-Host 'ERROR: NetLimiter installation failed.' -ForegroundColor Red",
         "    return",
         "}",
         "",
-        "# Download and run patcher",
         "$patcherUrl = 'https://github.com/Homeland-Community/NetLimiterPatcher/releases/download/v1.0.0/NetLimiterPatcher.exe'",
         "$patcherPath = \"$dir\\NetLimiterPatcher.exe\"",
         "",
         "if (-not (Test-Path $patcherPath)) {",
-        "    Write-Host 'Downloading NetLimiterPatcher...' -ForegroundColor Cyan",
         "    Invoke-WebRequest -Uri $patcherUrl -OutFile $patcherPath -UseBasicParsing",
         "}",
         "",
         "if (Test-Path $patcherPath) {",
-        "    Write-Host 'Running NetLimiterPatcher...' -ForegroundColor Cyan",
         "    Start-Process -FilePath $patcherPath -Wait -NoNewWindow",
-        "    Write-Host 'Patching completed.' -ForegroundColor Green",
         "}"
     ],
     "uninstaller": {
@@ -72,9 +71,6 @@
             "        if (Test-Path $logPath) {",
             "            Remove-Item $logPath -Force -ErrorAction SilentlyContinue",
             "        }",
-            "        Write-Host 'NetLimiter uninstalled successfully.' -ForegroundColor Green",
-            "    } else {",
-            "        Write-Host \"Uninstallation failed with exit code: $($process.ExitCode)\" -ForegroundColor Red",
             "    }",
             "}",
             "",
